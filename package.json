@@ -9,7 +9,9 @@
     "gclone": "clasp clone  --rootDir ./app-script",
     "gpull": "clasp pull",
     "gpush": "clasp push",
-    "gstart": "clasp push --watch"
+    "gstart": "clasp push --watch",
+    "start": "parcel src/index.html --dist-dir ./apps-script",
+    "build": "parcel build src/index.html --dist-dir ./apps-script"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,13 @@
   "homepage": "https://github.com/webvarghese/reactApp#readme",
   "devDependencies": {
     "@google/clasp": "^2.4.1",
-    "@types/google-apps-script": "^1.0.45"
+    "@parcel/transformer-sass": "^2.3.2",
+    "@types/google-apps-script": "^1.0.45",
+    "parcel": "^2.3.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.2"
   }
 }
